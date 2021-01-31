@@ -15,6 +15,7 @@ const Input = ({ label, type, name, value, onChange, error, onBlur }) => {
         onChange={onChange}
         value={value}
         onBlur={onBlur}
+        min={type === 'number' ? '0' : null}
       />
       {error && <p className={styles.error}>{error}</p>}
     </div>
