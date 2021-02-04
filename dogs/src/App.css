@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -89,4 +93,19 @@ a {
     opacity: 1;
     transform: initial;
   }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 10rem);
+}
+
+.AppBody {
+  flex: 1;
+}
+
+
+.VictoryContainer{
+  height: initial !important;
 }
